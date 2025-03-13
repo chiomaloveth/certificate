@@ -1,0 +1,209 @@
+/* Main styles for FIRS Certificate */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+.certificate-container {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin: 40px auto;
+
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  /* Set the ornament image as a background */
+  background-image: url("background.PNG");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  background-size: 800px 600px;
+}
+
+/* Red Corner */
+.red-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 300px;
+    background-color: #e63946;
+    clip-path: polygon(0 0, 100% 0, 100% 100%); /* Creates an upside-down triangle */
+  }
+
+
+  .grey-corner {
+    position: absolute;
+    bottom: 0; /* Position at the bottom */
+    left: 0; /* Position on the left side */
+    width: 100px;
+    height: 300px;
+    background-color:#555555;
+    clip-path: polygon(0 100%, 100% 100%, 0 0); /* Upward-facing triangle */
+  }
+
+/* Logo styling */
+.logo {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo img {
+  width: 100px;
+}
+
+/* Header and title styles */
+.header {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  font-family: "Playfair Display", serif;
+}
+
+.certificate-title {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #b69d56;
+  font-size: 28px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
+/* Certification text styles */
+.participation-text {
+  position: absolute;
+  top: 240px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+  font-family: "Playfair Display", serif;
+}
+
+.recipient-name {
+  position: absolute;
+  top: 280px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  text-align: center;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: bold;
+  color: #000000;
+  border-bottom: 1px solid  #000000;;
+  padding-bottom: 5px;
+  font-family: "Dancing Script", cursive;
+  margin-top: 20px;
+}
+
+.course-description {
+  position: absolute;
+  top: 330px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.course-title {
+  position: absolute;
+  top: 360px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #000000;
+  font-family: "Playfair Display", serif;
+  margin-top: 10px;
+}
+
+/* Date and signature section */
+.date-container {
+  position: absolute;
+  top: 420px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.date-label {
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Signature Section */
+.signature {
+    position: absolute;
+    top: 470px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px; /* Adjust width as needed */
+    text-align: center;
+    margin-top: -30px;
+  }
+  
+  .signature-line {
+    border-bottom: 2px dashed #000; /* Dashed line for the signature space */
+    width: 100%;
+    height: 20px; /* Adjust height as needed */
+    margin: 0 auto; /* Center the line */
+  }
+
+/* Director title */
+.director-title {
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold; 
+  margin-top: -30px;
+}
+
+/* Footer slogan */
+.tax-slogan {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #e63946;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+  
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .certificate-container {
+    width: 90%;
+  }
+
+  .date-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
